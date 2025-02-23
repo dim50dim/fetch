@@ -67,9 +67,10 @@ document.querySelector('.b-6').onclick = f6;
 let blocks7 = document.querySelectorAll('.out-7');
 
 function f7() {
-    for(let i = 0;i < blocks7.length; i++) {
-        blocks7[i].classList.toggle('bg-orange');
-    }
+    // for(let i = 0;i < blocks7.length; i++) {
+    //     blocks7[i].classList.toggle('bg-orange');
+    // }
+    blocks7.map(item => item.classList.toggle('bg-orange'));
     //внутри цикла blocks7[i].classList....
 }
 
