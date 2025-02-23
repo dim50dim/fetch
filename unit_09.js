@@ -43,7 +43,8 @@ document.querySelector('.b-4').onclick = f4;
 // По нажатию .b-5 запускайте функцию f5, которая проверяет наличие класса .bg-orange у блока .out-4 (да, именно у out-4 ). Результат - true или false, выводите в .out-5.
 
 function f5() {
-
+   let value =  document.querySelector('.out-4').classList.contains('bg-orange')
+   document.querySelector('.out-5').innerHTML = value;
 }
 
 document.querySelector('.b-5').onclick = f5;
