@@ -82,7 +82,11 @@ document.querySelector('.b-7').onclick = f7;
 let blocks8 = document.querySelectorAll('.out-8');
 
 function f8() {
+    for(let i = 0;i < blocks8.length; i++){
+        blocks8[i].classList.toggle('bg-orange');
+    }
     //внутри цикла blocks8[i].classList....
+
 }
 
 document.querySelector('.b-8').onclick = f8;
